@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registro</title>
+	<link rel="stylesheet" href="style/index_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src='js/firebase.js'></script>
+
+	<script>
+
+
+	var firebase = new Firebase('https://blazing-torch-3316.firebaseio.com/storage');	
+
+	 function metodo(){
+
+	 	var nombre = $('#nombre').val();
+	 	var apellidos = $('#apellidos').val();
+	 	var edad= $('#edad').val();
+	 	var usuario = $('#usuario').val();
+	 	var password = $('#pass').val();
+	 	var mail = $('#mail').val();
+
+	 	
+	 	firebase.push({nombre: nombre,apellidos:apellidos,edad: edad,usuario:usuario,password:password,mail:mail});
+	}
+
+
+
+
+	</script>
+
+
+</head>
+
+<body bgcolor= "#E6E6E6">
+	<section id= "formulario">
+
+		<p id="titulo"> Bienvenido a Do me a Favor</p>
+		<form id="registro" action="">
+			<input  type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+			<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+			<input  type="text" id="edad" name="edad" placeholder="Edad" required>
+			<input  type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" required>
+			<input  type="mail" id="mail" name="mail" placeholder="Correo electr&oacute;nico" required>
+			<input  type="password" id="pass" name="pass" placeholder="Contrase&ntilde;a" required>
+			<input  type="submit" value="enviar" onclick="metodo()">
+		
+		</form>
+	</section>
+
+</body>
+</html>
