@@ -1,8 +1,12 @@
 
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pide un Favor!</title>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap-responsive.css">
 <meta charset="UTF-8">
+</head>
+<body background="pictures/blue.jpg">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -13,7 +17,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="Inicio.html">Do Me a Favor!</a>
+      <a class="navbar-brand" href="index.html">Do Me a Favor!</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,14 +25,13 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="pedirfavor.html">Pedir un Favor<span class="sr-only">(current)</span></a></li>
           <li><a href="listaFavores.html">Hacer un Favor!</a></li>
-          <li><a href="Contacto.html">Ayuda</a></li>
-        
+
       </ul>
-      
+
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Contacto</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perfil <span class="caret"></span></a>
+          <a href="perfil.htm" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perfil <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -45,7 +48,7 @@
 
 <form class="form-horizontal" action='' method="POST">
   <fieldset>
-      
+
     <div id="legend">
       <legend class="">Pide un Favor!</legend>
     </div>
@@ -53,7 +56,8 @@
       <label class="control-label"  for="username">Título de tu favor</label>
       <div class="controls">
         <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-        <p class="help-block">Escribe una descripción corta para tu favor</p>
+		  <br>
+		  <label class="control-group" for="username">Escribe una descripción corta para tu favor</label>
         <textarea class="form-control" rows="4"></textarea>
       </div>
     </div>
@@ -78,15 +82,16 @@
     </div>
 </div>
     <div class="control-group">
-      <label class="control-label" for="email">Escribe la hora del favor</label>
+      <label class="control-label" for="username">Escribe la hora del favor</label>
       <div class="controls">
         <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
-        <p class="help-block">Escribe la hora con formato HH:MM</p>
+        <br>
+		  <label class="control-group" for="username">Escribe la hora en formato HH:MM</label>
       </div>
     </div>
- 
- 
- 
+
+
+
     <div class="control-group">
       <!-- Button -->
       <div class="controls">
@@ -96,3 +101,5 @@
   </fieldset>
 </form>
 </div>
+
+</body>

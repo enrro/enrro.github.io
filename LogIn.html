@@ -11,7 +11,7 @@
 	<script>
 
 
-	var firebase = new Firebase('https://blazing-torch-3316.firebaseio.com/storage');	
+	var firebase = new Firebase('https://blazing-torch-3316.firebaseio.com/storage');
 
 	 function metodo(){
 
@@ -21,8 +21,8 @@
 	 	var usuario = $('#usuario').val();
 	 	var password = $('#pass').val();
 	 	var mail = $('#mail').val();
+		window.location.href="index.html";
 
-	 	
 	 	firebase.push({nombre: nombre,apellidos:apellidos,edad: edad,usuario:usuario,password:password,mail:mail});
 	}
 
@@ -30,21 +30,21 @@
 
 
 	</script>
-	
+
 	</head>
 
 
 
-<body bgcolor= "#E6E6E6">
+<body background="pictures/blue.jpg">
 	<section id= "formulario">
 
 		<p id="titulo"> Log In</p>
 		<form id="registro" action="">
 			<input  type="text" id="usuario" name="usuario" placeholder="Usuario" required>
 			<input type="text" id="contraseña" name="contraseña" placeholder="Contraseña" required>
-			
+
 			<input  type="submit" value="enviar" >
-		
+
 		</form>
 	</section>
 
